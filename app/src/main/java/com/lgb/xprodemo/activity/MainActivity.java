@@ -12,8 +12,8 @@ import com.lgb.xprodemo.fragment.FragmentUtils;
  */
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
+    //testupload
 
-    // 测试
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
