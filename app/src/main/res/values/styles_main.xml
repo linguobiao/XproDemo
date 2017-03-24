@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="btn_main_item" parent="xpro_layout_match_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+</resources>
