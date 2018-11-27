@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.lgb.xprodemo.activity.XFragmentActivity">
+        <activity android:name="com.lgb.xprodemo.xfragment.XFragmentActivity">
         </activity>
-        <activity android:name="com.lgb.xprodemo.activity.XBluetoothActivity">
+        <activity android:name="com.lgb.xprodemo.xbluetooth.XBluetoothActivity">
         </activity>
         <activity android:name="com.lgb.xprodemo.activity.ConstraintActivity">
         </activity>

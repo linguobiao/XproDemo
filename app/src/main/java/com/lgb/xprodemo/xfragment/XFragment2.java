@@ -1,4 +1,4 @@
-package com.lgb.xprodemo.fragment;
+package com.lgb.xprodemo.xfragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +14,7 @@ import com.lgb.xprodemo.R;
  * Created by linguobiao on 16/11/8.
  */
 
-public class XFragment5 extends Fragment{
+public class XFragment2 extends Fragment{
 
     private TextView tv_1;
 
@@ -28,7 +28,7 @@ public class XFragment5 extends Fragment{
 
     private void initView(View view) {
         tv_1 = (TextView) view.findViewById(R.id.tv_1);
-        tv_1.setText("我的");
+        tv_1.setText("发现");
     }
 
 }

@@ -1,1 +1,1 @@
-include ':app', ':xpro'
+include ':app', ':xpro', ':xblue'

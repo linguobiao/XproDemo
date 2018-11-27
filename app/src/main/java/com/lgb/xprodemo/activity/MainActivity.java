@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.lgb.xprodemo.R;
-import com.lgb.xprodemo.fragment.FragmentUtils;
+import com.lgb.xprodemo.xbluetooth.XBluetoothActivity;
+import com.lgb.xprodemo.xfragment.XFragmentActivity;
 
 /**
  * Created by LGB on 17/1/13.
@@ -18,7 +19,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FragmentUtils.getInstance().initFragment(this);
         initView();
     }
 

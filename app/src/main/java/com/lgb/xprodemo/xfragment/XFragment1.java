@@ -1,4 +1,4 @@
-package com.lgb.xprodemo.fragment;
+package com.lgb.xprodemo.xfragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +14,7 @@ import com.lgb.xprodemo.R;
  * Created by linguobiao on 16/11/8.
  */
 
-public class XFragment3 extends Fragment{
+public class XFragment1 extends Fragment implements View.OnClickListener{
 
     private TextView tv_1;
 
@@ -28,7 +28,16 @@ public class XFragment3 extends Fragment{
 
     private void initView(View view) {
         tv_1 = (TextView) view.findViewById(R.id.tv_1);
-        tv_1.setText("店铺");
+        tv_1.setText("销售feafafeafafdafewafafefa");
+        tv_1.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_1:
+                FragmentUtils.getInstance().showFragment(XFragmentSon.class);
+                break;
+        }
+    }
 }

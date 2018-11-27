@@ -1,4 +1,4 @@
-package com.lgb.xprodemo.activity;
+package com.lgb.xprodemo.xbluetooth;
 
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.lgb.xpro.bluetooth.XBleGlobal;
 import com.lgb.xpro.bluetooth.XBluetoothCallbackApi;
 import com.lgb.xprodemo.R;
+import com.lgb.xprodemo.activity.BaseActivity;
 import com.lgb.xprodemo.utils.BluetoothUtils;
 
 import java.util.Arrays;

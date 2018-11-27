@@ -1,11 +1,9 @@
 package com.lgb.xprodemo.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.lgb.xprodemo.R;
-import com.lgb.xprodemo.fragment.FragmentUtils;
 
 /**
  * Created by LGB on 17/1/13.

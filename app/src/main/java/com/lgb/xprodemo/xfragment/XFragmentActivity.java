@@ -1,11 +1,11 @@
-package com.lgb.xprodemo.activity;
+package com.lgb.xprodemo.xfragment;
 
 import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 
 import com.lgb.xprodemo.R;
-import com.lgb.xprodemo.fragment.FragmentUtils;
+import com.lgb.xprodemo.activity.BaseActivity;
 
 public class XFragmentActivity extends BaseActivity implements CompoundButton.OnCheckedChangeListener{
 
@@ -13,7 +13,7 @@ public class XFragmentActivity extends BaseActivity implements CompoundButton.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_fragment);
-        FragmentUtils.getInstance().initFragment(this);
+        FragmentUtils.getInstance().initFragment(this, R.id.ly_fragment_content);
         initView();
     }
 
@@ -32,27 +32,27 @@ public class XFragmentActivity extends BaseActivity implements CompoundButton.On
         switch (compoundButton.getId()) {
             case R.id.radio_1:
                 if (isChecked) {
-                    FragmentUtils.getInstance().xFragmentManager.showMainFragment(FragmentUtils.FRAGMENT_1);
+                    FragmentUtils.getInstance().showMainFragment(XFragment1.class);
                 }
                 break;
             case R.id.radio_2:
                 if (isChecked) {
-                    FragmentUtils.getInstance().xFragmentManager.showMainFragment(FragmentUtils.FRAGMENT_2);
+                    FragmentUtils.getInstance().showMainFragment(XFragment2.class);
                 }
                 break;
             case R.id.radio_3:
                 if (isChecked) {
-                    FragmentUtils.getInstance().xFragmentManager.showMainFragment(FragmentUtils.FRAGMENT_3);
+                    FragmentUtils.getInstance().showMainFragment(XFragment3.class);
                 }
                 break;
             case R.id.radio_4:
                 if (isChecked) {
-                    FragmentUtils.getInstance().xFragmentManager.showMainFragment(FragmentUtils.FRAGMENT_4);
+                    FragmentUtils.getInstance().showMainFragment(XFragment4.class);
                 }
                 break;
             case R.id.radio_5:
                 if (isChecked) {
-                    FragmentUtils.getInstance().xFragmentManager.showMainFragment(FragmentUtils.FRAGMENT_5);
+                    FragmentUtils.getInstance().showMainFragment(XFragment5.class);
                 }
                 break;
         }
